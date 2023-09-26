@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.login_form.HelloApplication">
+   <left>
+      <AnchorPane prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: A9A9A9;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="120.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cart.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="192.0" layoutY="4.0" prefHeight="57.0" prefWidth="262.0" style="-fx-text-fill: #24a0ed; -fx-background-color: transparent;" text="Shop Now">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="512.0" layoutY="13.0" mnemonicParsing="false" style="-fx-text-fill: #A9A9A9; -fx-background-color: transparent; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" text="Cancel">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="244.0" layoutY="60.0" prefHeight="30.0" prefWidth="90.0" style="-fx-text-fill: #A9A9A9;" text="Login">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <!-- Inputs -->
+
+            <TextField fx:id="txtlogin_username" layoutX="150.0" layoutY="100.0" prefHeight="30.0" prefWidth="300.0" promptText="Username / Email" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtlogin_password" layoutX="150.0" layoutY="140.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <CheckBox layoutX="150.0" layoutY="195.0" mnemonicParsing="false" style="-fx-text-fill: #A9A9A9;" text="Remember Me">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <!-- Login Button -->
+            <Button fx:id="btnlogin" layoutX="335.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleLoginButton" style="-fx-background-color: #24a0ed; -fx-text-fill: White; -fx-border-radius: 5; -fx-border-width: 2;" text="Login">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <!-- Forgot your password button -->
+            <Button layoutX="190.0" layoutY="235.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #A9A9A9;" text="Forgot your Password?">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="500.0" endY="380.0" fill="#c9c9c99e" layoutY="-110.0" startX="100.0" startY="380.0" stroke="#a8a8a8" style="-fx-fill: #A9A9A9;" />
+            <Label layoutX="230.0" layoutY="275.0" prefHeight="36.0" prefWidth="130.0" style="-fx-text-fill: #A9A9A9;" text="Sign-Up">
+               <font>
+                  <Font name="SansSerif Regular" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtsignup_username" layoutX="155.0" layoutY="320.0" prefHeight="30.0" prefWidth="300.0" promptText="Username" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtsignup_email" layoutX="155.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" promptText="Email" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtsignup_repeatpassword" layoutX="155.0" layoutY="440.0" prefHeight="30.0" prefWidth="300.0" promptText="Repeat Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="txtsignup_password" layoutX="155.0" layoutY="400.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="480.0" prefHeight="20.0" prefWidth="105.0" style="-fx-text-fill: #A9A9A9;" text="Date of Birth">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datepick_signup" layoutX="250.0" layoutY="480.0" promptText="mm/dd/yyyy" showWeekNumbers="true" />
+            <Label layoutX="130.0" layoutY="515.0" prefHeight="20.0" prefWidth="90.0" style="-fx-text-fill: #A9A9A9;" text="Gender">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rabtn_signup_male" layoutX="300.0" layoutY="515.0" mnemonicParsing="false" selected="true" style="-fx-text-fill: #A9A9A9;" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gender" />
+               </toggleGroup>
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="390.0" layoutY="515.0" mnemonicParsing="false" style="-fx-text-fill: #A9A9A9;" text="Female" toggleGroup="$Gender">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </RadioButton>
+            <CheckBox fx:id="checkbox_signup_terms" layoutX="160.0" layoutY="545.0" mnemonicParsing="false" prefWidth="300.0" selected="true" style="-fx-text-fill: #A9A9A9;" text="I have read the Terms and Conditions">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="btnsignup" layoutX="230.0" layoutY="615.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Sign-Up">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="214.0" layoutY="660.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #A9A9A9;" text="Terms and Conditions" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+
+
+   </center>
+</BorderPane>
